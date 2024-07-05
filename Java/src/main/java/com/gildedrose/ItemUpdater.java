@@ -7,7 +7,7 @@ public abstract class ItemUpdater {
     public static final int QUALITY_MIN = 0;
     public static final int QUALITY_MAX = 50;
 
-    protected void update(Item item){
+    void update(Item item){
         updateQuality(item, getIncrementValue());
         updateSellIn(item);
         if (isExpired(item)) {

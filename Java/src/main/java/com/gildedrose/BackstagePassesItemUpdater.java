@@ -3,7 +3,7 @@ package com.gildedrose;
 public class BackstagePassesItemUpdater extends ItemUpdater {
 
     @Override
-    public void update(Item item) {
+    void update(Item item) {
         updateQuality(item, getIncrementValue());
         if (item.sellIn <= 10) {
             updateQuality(item, getIncrementValue());
